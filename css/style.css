@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerMedium.woff2") format("woff2");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerMedium.woff.woff") format("woff"), url("../fonts/MullerMedium.woff2") format("woff2");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerExtraBoldItalic.woff") format("woff2");
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerExtraBold.woff2") format("woff"), url("../fonts/MullerExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* Убирает линии обводки ***************************************************/
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+header,
+footer,
+nav,
+aside {
+	display: block;
+}
+
+/* Уравнивает параметры шрифтов на разных браузерах */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Прошу элементы форм наследовать стили элементов шрифта */
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/* Убирает крест у IE */
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a {
+	color: inherit;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+body {
+	font-family: "Muller";
+}
+
+div[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1216px;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.header__main {
+	min-height: 40px;
+	padding: 5px 0px;
+}
+
+.main-header__logo {
+	display: inline-block;
+	margin: 0px 38px 0px 0px;
+}
+
+.main-header__logo img {
+	vertical-align: middle;
+}
+
+.main-header__logo-text {
+	display: inline-block;
+	margin: 0px 287px 0px 0px;
+	font-size: 14px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.main-header__telephone {
+	margin: 0px 32px 0px 0px;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.main-header__callback {
+	display: inline-block;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2f80ed;
+	border: 2px solid #2f80ed;
+	border-radius: 8px;
+	padding: 8px 20px;
+}
+
+.homepage-main__body {
+	display: inline-block;
+	width: 708px;
+}
+
+.homepage-main__heading {
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 100%;
+	color: #000000;
+	margin: 86px 0px 60px 0px;
+}
+
+.homepage-main__sub-heading {
+	font-size: 28px;
+	line-height: 140%;
+	color: #4f4f4f;
+	margin: 0px 0px 98px 0px;
+	width: 677px;
+}
+
+.homepage-main__text {
+	width: 324px;
+	font-size: 14px;
+	line-height: 140%;
+	color: #4f4f4f;
+	margin: 0px 0px 21px 0px;
+}
+
+.homepage-main__button {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	border: 2px solid #2f80ed;
+	border-radius: 8px;
+}
+
+.homepage-main__image {
+	display: inline-block;
+	width: 500px;
+}
+
+.homepage-main__image img {
+	vertical-align: bottom;
+}
+
+.advantages-homepage__item {
+	display: inline-block;
+	margin: 0px 0px 28px 0px;
+}
+
+.advantages-homepage__item:nth-child(odd) {
+	margin: 0px 151px 0px 0px;
+}
+
+.advantages-homepage__item_img {
+	display: inline-block;
+	margin: 0px 12px 0px 0px;
+}
+
+.advantages-homepage__item_img img {
+	vertical-align: bottom;
+}
+
+.advantages-homepage__item_text {
+	display: inline-block;
+	width: 191px;
+}
+
+.main_conditions {
+	padding: 96px 0px;
+}
+
+.conditions-main__items {
+	margin: 12px 0px 0px 0px;
+}
+
+.conditions-main__item {
+	display: inline-block;
+	width: 582px;
+	padding: 38px 15px 10px 15px;
+	font-size: 16px;
+	line-height: 140%;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin: 0px 0px 40px 0px;
+}
+
+.conditions-main__item:nth-child(odd) {
+	margin: 0px 32px 0px 0px;
+}
+
+.conditions-main__item__title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 64px;
+	color: #2f80ed;
+	text-align: center;
+}
+
+.conditions-main__item__text {
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+}
+
+.title-block {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 48px;
+	color: #000000;
+	margin: 0px 0px 12px 0px;
+}
+
+.sub-title {
+	font-size: 20px;
+	line-height: 140%;
+	color: #4f4f4f;
+}
+
+.warning__block {
+	border: 2px solid #2f80ed;
+	border-radius: 8px;
+	padding: 28px 152px;
+	margin: 0 auto;
+}
+
+.warning__block_img {
+	display: inline-block;
+	margin: 0px 31px 0px 0px;
+}
+
+.warning__block_img img {
+	vertical-align: bottom;
+}
+
+.warning__block_text {
+	display: inline-block;
+	width: 750px;
+}
+
+.stages-main__head {
+	display: inline-block;
+	margin: 0px 17px;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	color: #2f80ed;
+}
+
+.stages-main__body {
+	display: inline-block;
+	margin: 0px 68px 0px 0px;
+}
+
+.stages-main__item {
+	width: 443px;
+	margin: 0px 0px 20px 0px;
+}
+
+.stages-main__block img {
+	display: inline-block;
+	padding: 10px 0px 0px 0px;
+}
+
+.stages-main__img {
+	display: inline-block;
+}
+
+.stages-main__img img {
+	display: inline-block;
+	width: 700px;
+	vertical-align: super;
+}
+
+.quest-main {
+	padding: 96px 0px;
+}
+
+.quest-main__title {
+	margin: 0px 0px 40px 0px;
+}
+
+.quest-main__body {
+	border: 1px solid #2f80ed;
+	border-radius: 12px;
+	padding: 32px;
+	text-align: center;
+	width: 800px;
+	height: 366px;
+	margin: 0 auto;
+}
+
+.quest-main__head {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0px 0px 12px 0px;
+}
+
+.quest-main__subhead {
+	font-size: 16px;
+	line-height: 140%;
+	color: #4f4f4f;
+	margin: 0px 0px 33px 0px;
+}
+
+.quest-main__point {
+	padding: 0px 0px 0px 312px;
+	text-align: left;
+	margin: 0px 0px 12px 0px;
+}
+
+.quest-main__circle {
+	border: 2px solid #2f80ed;
+	display: inline-block;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	margin: 0px 20px 0px 0px;
+}
+
+.quest-main__text {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+.quest-main__button {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border: 1px solid #2f80ed;
+	border-radius: 12px;
+	margin: 64px 0px 0px 552px;
+	display: inline-block;
+	padding: 10px 45px;
+	text-align: right;
+}
